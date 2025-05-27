@@ -97,7 +97,7 @@
 #' Firts realistic dataset with real events in oil well drilling. The data available
 #'     in this package consist of time series already analyzed and applied in
 #'     research experiments by the DAL group (Data Analytics Lab). The series are
-#'     divided into 7 groups (Type_0, Type_1, Type_2, Type_5, Type_6, Type_7 and Type_8).
+#'     divided into 7 groups (Type_0, Type_1, Type_2, Type_4, Type_5, Type_6, Type_7 and Type_8).
 #'     Type 0 removed from this version due to file size.
 #'     Creation date: 2019.
 #'     See \href{https://github.com/cefet-rj-dal/dalevents}{cefet-rj-dal/dalevents}
@@ -120,7 +120,7 @@
 #' Firts realistic dataset with real events in oil well drilling. The data available
 #'     in this package consist of time series already analyzed and applied in
 #'     research experiments by the DAL group (Data Analytics Lab). The series are
-#'     divided into 7 groups (Type_0, Type_1, Type_2, Type_5, Type_6, Type_7 and Type_8).
+#'     divided into 7 groups (Type_0, Type_1, Type_2, Type_4, Type_5, Type_6, Type_7 and Type_8).
 #'     Creation date: 2019.
 #'     See \href{https://github.com/cefet-rj-dal/dalevents}{cefet-rj-dal/dalevents}
 #'     for detailed guidance on using this package and the other datasets available in it.
@@ -136,13 +136,35 @@
 #' serie <- oil_3w_Type_2[[1]]
 "oil_3w_Type_2"
 
+#' @name oil_3w_Type_4
+#' @title Oil wells dataset - Type 4
+#' @description
+#' Firts realistic dataset with real events in oil well drilling. The data available
+#'     in this package consist of time series already analyzed and applied in
+#'     research experiments by the DAL group (Data Analytics Lab). The series are
+#'     divided into 7 groups (Type_0, Type_1, Type_2, Type_4, Type_5, Type_6, Type_7 and Type_8).
+#'     Creation date: 2019.
+#'     See \href{https://github.com/cefet-rj-dal/dalevents}{cefet-rj-dal/dalevents}
+#'     for detailed guidance on using this package and the other datasets available in it.
+#'     Labels available? Yes
+#' @docType data
+#' @usage data(oil_3w_Type_4)
+#' @format A list of time series.
+#' @keywords datasets
+#' @references 3W dataset Data Set
+#' @source \href{https://archive.ics.uci.edu/ml/datasets/3W+dataset}{UCI Machine Learning Repository}
+#' @examples
+#' data(oil_3w_Type_4)
+#' serie <- oil_3w_Type_4[[1]]
+"oil_3w_Type_4"
+
 #' @name oil_3w_Type_5
 #' @title Oil wells dataset - Type 5
 #' @description
 #' Firts realistic dataset with real events in oil well drilling. The data available
 #'     in this package consist of time series already analyzed and applied in
 #'     research experiments by the DAL group (Data Analytics Lab). The series are
-#'     divided into 7 groups (Type_0, Type_1, Type_2, Type_5, Type_6, Type_7 and Type_8).
+#'     divided into 7 groups (Type_0, Type_1, Type_2, Type_4, Type_5, Type_6, Type_7 and Type_8).
 #'     Creation date: 2019.
 #'     See \href{https://github.com/cefet-rj-dal/dalevents}{cefet-rj-dal/dalevents}
 #'     for detailed guidance on using this package and the other datasets available in it.
@@ -164,7 +186,7 @@
 #' Firts realistic dataset with real events in oil well drilling. The data available
 #'     in this package consist of time series already analyzed and applied in
 #'     research experiments by the DAL group (Data Analytics Lab). The series are
-#'     divided into 7 groups (Type_0, Type_1, Type_2, Type_5, Type_6, Type_7 and Type_8).
+#'     divided into 7 groups (Type_0, Type_1, Type_2, Type_4, Type_5, Type_6, Type_7 and Type_8).
 #'     Creation date: 2019.
 #'     See \href{https://github.com/cefet-rj-dal/dalevents}{cefet-rj-dal/dalevents}
 #'     for detailed guidance on using this package and the other datasets available in it.
@@ -186,7 +208,7 @@
 #' Firts realistic dataset with real events in oil well drilling. The data available
 #'     in this package consist of time series already analyzed and applied in
 #'     research experiments by the DAL group (Data Analytics Lab). The series are
-#'     divided into 7 groups (Type_0, Type_1, Type_2, Type_5, Type_6, Type_7 and Type_8).
+#'     divided into 7 groups (Type_0, Type_1, Type_2, Type_4, Type_5, Type_6, Type_7 and Type_8).
 #'     Creation date: 2019.
 #'     See \href{https://github.com/cefet-rj-dal/dalevents}{cefet-rj-dal/dalevents}
 #'     for detailed guidance on using this package and the other datasets available in it.
@@ -208,7 +230,7 @@
 #' Firts realistic dataset with real events in oil well drilling. The data available
 #'     in this package consist of time series already analyzed and applied in
 #'     research experiments by the DAL group (Data Analytics Lab). The series are
-#'     divided into 7 groups (Type_0, Type_1, Type_2, Type_5, Type_6, Type_7 and Type_8).
+#'     divided into 7 groups (Type_0, Type_1, Type_2, Type_4, Type_5, Type_6, Type_7 and Type_8).
 #'     Creation date: 2019.
 #'     See \href{https://github.com/cefet-rj-dal/dalevents}{cefet-rj-dal/dalevents}
 #'     for detailed guidance on using this package and the other datasets available in it.
