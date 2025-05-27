@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-![GitHub Repo stars](https://cranlogs.r-pkg.org/badges/dalevents)
+![GitHub Repo stars](https://github.com/cefet-rj-dal/dalevents)
 <!-- badges: end -->
 
 Repository for organizing datasets used for developing and testing
@@ -20,14 +20,14 @@ Full description available at:
 
 ## Installation
 
+<!--
 The latest version of DAL Toolbox at CRAN is available at:
 <https://CRAN.R-project.org/package=dalevents>
-
-You can install the stable version of DAL Toolbox from CRAN with:
-
-``` r
+&#10;You can install the stable version of DAL Toolbox from CRAN with:
+&#10;``` r
 install.packages("dalevents")
 ```
+-->
 
 You can install the development version of DAL Toolbox from GitHub
 <https://github.com/cefet-rj-dal/dalevents> with:

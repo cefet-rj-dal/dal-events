@@ -21,8 +21,10 @@ for detailed guidance on using this package and the other datasets available in 
 Labels available? Yes
 }
 \examples{
+library(harbinger)
 data(A3Benchmark)
 serie <- A3Benchmark[[1]]
+har_plot(harbinger(), serie$value)
 }
 \references{
 Yoshihara K, Takahashi K (2022) A simple method for unsupervised anomaly detection: An application to Web time series data. PLoS ONE 17(1).
