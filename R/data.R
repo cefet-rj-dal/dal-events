@@ -469,3 +469,86 @@
 #' data <- ucr_power_demand[[1]]
 #' series <- data$value
 "ucr_power_demand"
+
+
+#' @name mit_bih_MLII
+#' @title MIT-BIH Arrhythmia Database (MIT-BIH) - MLII sensor
+#' @description
+#' Data collection with real-world time-series.
+#'     MIT-BIH Arrhythmia Database (MIT-BIH).
+#'     See \href{https://github.com/cefet-rj-dal/dalevents}{cefet-rj-dal/dalevents}
+#'     for detailed guidance on using this package and the other datasets available in it.
+#'     Labels available? Yes
+#' @docType data
+#' @usage data(mit_bih_MLII)
+#' @format A list of time series from the MLII sensor of the MIT-BIH Arrhythmia Database.
+#' @keywords datasets
+#' @references MIT-BIH Arrhythmia Database (MIT-BIH)
+#' @source \href{https://doi.org/10.1109/51.932724}{MIT-BIH}
+#' @examples
+#' data(mit_bih_MLII)
+#' data <- mit_bih_MLII[[1]]
+#' series <- data$value
+"mit_bih_MLII"
+
+#' @name mit_bih_V1
+#' @title MIT-BIH Arrhythmia Database (MIT-BIH) - V1 sensor
+#' @description
+#' Data collection with real-world time-series.
+#'     MIT-BIH Arrhythmia Database (MIT-BIH).
+#'     See \href{https://github.com/cefet-rj-dal/dalevents}{cefet-rj-dal/dalevents}
+#'     for detailed guidance on using this package and the other datasets available in it.
+#'     Labels available? Yes
+#' @docType data
+#' @usage data(mit_bih_V1)
+#' @format A list of time series from the V1 sensor of the MIT-BIH Arrhythmia Database.
+#' @keywords datasets
+#' @references MIT-BIH Arrhythmia Database (MIT-BIH)
+#' @source \href{https://doi.org/10.1109/51.932724}{MIT-BIH}
+#' @examples
+#' data(mit_bih_V1)
+#' data <- mit_bih_V1[[1]]
+#' series <- data$value
+"mit_bih_V1"
+
+#' @name mit_bih_V2
+#' @title MIT-BIH Arrhythmia Database (MIT-BIH) - V2 sensor
+#' @description
+#' Data collection with real-world time-series.
+#'     MIT-BIH Arrhythmia Database (MIT-BIH).
+#'     See \href{https://github.com/cefet-rj-dal/dalevents}{cefet-rj-dal/dalevents}
+#'     for detailed guidance on using this package and the other datasets available in it.
+#'     Labels available? Yes
+#' @docType data
+#' @usage data(mit_bih_V2)
+#' @format A list of time series from the V2 sensor of the MIT-BIH Arrhythmia Database.
+#' @keywords datasets
+#' @references MIT-BIH Arrhythmia Database (MIT-BIH)
+#' @source \href{https://doi.org/10.1109/51.932724}{MIT-BIH}
+#' @examples
+#' data(mit_bih_V2)
+#' data <- mit_bih_V2[[1]]
+#' series <- data$value
+"mit_bih_V2"
+
+#' @name mit_bih_V5
+#' @title MIT-BIH Arrhythmia Database (MIT-BIH) - V5 sensor
+#' @description
+#' Data collection with real-world time-series.
+#'     MIT-BIH Arrhythmia Database (MIT-BIH).
+#'     See \href{https://github.com/cefet-rj-dal/dalevents}{cefet-rj-dal/dalevents}
+#'     for detailed guidance on using this package and the other datasets available in it.
+#'     Labels available? Yes
+#' @docType data
+#' @usage data(mit_bih_V5)
+#' @format A list of time series from the V5 sensor of the MIT-BIH Arrhythmia Database.
+#' @keywords datasets
+#' @references MIT-BIH Arrhythmia Database (MIT-BIH)
+#' @source \href{https://doi.org/10.1109/51.932724}{MIT-BIH}
+#' @examples
+#' data(mit_bih_V5)
+#' data <- mit_bih_V5[[1]]
+#' series <- data$value
+"mit_bih_V5"
+
+

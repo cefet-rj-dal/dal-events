@@ -14,7 +14,7 @@ levels <- c('\'', '!', '"', '(', ')', '*', '/', '?', '@', '[', ']', '^', '`',
             'j', 'L', 'N', 'n', 'p', 'Q', 'R', 'r', 'S', 's', 't', 'T', 'u',
             'V', 'x')
 j <- 1
-motif_MLII <- list()
+mit_bih_MLII <- list()
 for (i in 1:length(dataset)) {
   if (!is.null(dataset[[i]]$MLII)) {
     data <- dataset[[i]]$MLII$signal
@@ -24,19 +24,19 @@ for (i in 1:length(dataset)) {
     data$seq <- factor(data$seq, levels=levels)
     data$event <- FALSE
     data$event[!is.na(data$seq)] <- TRUE
-    motif_MLII[[j]] <- data
-    names(motif_MLII)[j] <- sprintf("%s_MLII", names(dataset[i]))
+    mit_bih_MLII[[j]] <- data
+    names(mit_bih_MLII)[j] <- sprintf("%s_MLII", names(dataset[i]))
     j <- j + 1
   }
   if (j > 5)
     break
 }
 
-save(motif_MLII, file="motif_MLII.RData", compress = "xz")
+save(mit_bih_MLII, file="data/mit_bih_MLII.RData", compress = "xz")
 
 
 j <- 1
-motif_V1 <- list()
+mit_bih_V1 <- list()
 for (i in 1:length(dataset)) {
   if (!is.null(dataset[[i]]$V1)) {
     data <- dataset[[i]]$V1$signal
@@ -46,18 +46,18 @@ for (i in 1:length(dataset)) {
     data$seq <- factor(data$seq, levels=levels)
     data$event <- FALSE
     data$event[!is.na(data$seq)] <- TRUE
-    motif_V1[[j]] <- data
-    names(motif_V1)[j] <- sprintf("%s_V1", names(dataset[i]))
+    mit_bih_V1[[j]] <- data
+    names(mit_bih_V1)[j] <- sprintf("%s_V1", names(dataset[i]))
     j <- j + 1
   }
   if (j > 5)
     break
 }
-save(motif_V1, file="motif_V1.RData", compress = "xz")
+save(mit_bih_V1, file="data/mit_bih_V1.RData", compress = "xz")
 
 
 j <- 1
-motif_V2 <- list()
+mit_bih_V2 <- list()
 for (i in 1:length(dataset)) {
   if (!is.null(dataset[[i]]$V2)) {
     data <- dataset[[i]]$V2$signal
@@ -67,17 +67,17 @@ for (i in 1:length(dataset)) {
     data$seq <- factor(data$seq, levels=levels)
     data$event <- FALSE
     data$event[!is.na(data$seq)] <- TRUE
-    motif_V2[[j]] <- data
-    names(motif_V2)[j] <- sprintf("%s_V2", names(dataset[i]))
+    mit_bih_V2[[j]] <- data
+    names(mit_bih_V2)[j] <- sprintf("%s_V2", names(dataset[i]))
     j <- j + 1
   }
   if (j > 5)
     break
 }
-save(motif_V2, file="motif_V2.RData", compress = "xz")
+save(mit_bih_V2, file="data/mit_bih_V2.RData", compress = "xz")
 
 j <- 1
-motif_V5 <- list()
+mit_bih_V5 <- list()
 for (i in 1:length(dataset)) {
   if (!is.null(dataset[[i]]$V5)) {
     data <- dataset[[i]]$V5$signal
@@ -87,12 +87,12 @@ for (i in 1:length(dataset)) {
     data$seq <- factor(data$seq, levels=levels)
     data$event <- FALSE
     data$event[!is.na(data$seq)] <- TRUE
-    motif_V5[[j]] <- data
-    names(motif_V5)[j] <- sprintf("%s_V5", names(dataset[i]))
+    mit_bih_V5[[j]] <- data
+    names(mit_bih_V5)[j] <- sprintf("%s_V5", names(dataset[i]))
     j <- j + 1
   }
   if (j > 5)
     break
 }
-save(motif_V5, file="motif_V5.RData", compress = "xz")
+save(mit_bih_V5, file="data/mit_bih_V5.RData", compress = "xz")
 
