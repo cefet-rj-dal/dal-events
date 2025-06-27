@@ -1,0 +1,103 @@
+data(oil_3w_Type_2)
+
+#New pattern adjust -----------------------
+data <- oil_3w_Type_2$Type_2
+
+
+#Series 1---------------
+#Clean NA
+summary(data[[1]])
+data[[1]]$T_JUS_CKGL <- NULL
+plot(as.ts(data[[1]]))
+
+#Add event
+labels <- data.frame(class = data[[1]]$class)
+plot(as.ts(labels))
+
+labels$cpd <- 0
+
+class_label <- max(na.omit(labels$class))
+
+cp = FALSE
+for (i in 1:nrow(labels)){
+  if (cp == FALSE){
+    if(!is.na(labels$class[i]) && labels$class[i] != 0){
+      print("Ponto de mudança localizado em:")
+      print(i)
+      labels$cpd[i] <- 1
+      cp_idx <- i
+      cp <- TRUE
+    }
+  }
+}
+
+cp_idx <- cp_idx+1
+cp = FALSE
+
+for (i in cp_idx:nrow(labels)){
+  if (cp == FALSE){
+    if(!is.na(labels$class[i]) && labels$class[i] != class_label){
+      print("Ponto de mudança localizado em:")
+      print(i)
+      labels$cpd[i] <- 1
+      cp_idx <- i
+      cp  <- TRUE
+    }
+  }
+}
+
+sum(labels$cpd)
+
+
+plot(as.ts(labels))
+
+#Add CPD labels
+data[[1]]$event <- labels$cpd
+#Remove old classes -----------------------
+data[[1]]$class <- NULL
+
+plot(as.ts(data[[1]]))
+
+
+
+#TO DO: Complete labels adjust to series 2 to 22
+
+#Adjust names and types -----------------------
+for (i in 1:length(data)){
+  data[[i]]$event <- as.logical(as.integer(data[[i]]$event))
+  names(data[[i]]) <- tolower(names(data[[i]]))
+}
+
+
+
+#Plot -----------------------
+for (i in 1:length(data)){
+  plot(as.ts(data[[i]]),
+       main=names(data[i]))
+}
+
+#Dataset organized with series into a list
+oil_3w_Type_2 <- list()
+
+#Idx variable
+for (i in 1:(length(data))) {
+  idx <- 1:nrow(data[[i]])
+  oil_3w_Type_2[[i]] <- cbind(data.frame(idx), data[[i]])
+  names(oil_3w_Type_2)[i] <- names(data)[i]
+}
+
+
+for (i in 1:length(oil_3w_Type_2)){
+  oil_3w_Type_2[[i]]$type <- ""
+  oil_3w_Type_2[[i]]$type[oil_3w_Type_2[[i]]$event] <- "Change Point"
+}
+
+
+for (i in 1:length(oil_3w_Type_2)){
+  plot(as.ts(oil_3w_Type_2[[i]]),
+       main = names(oil_3w_Type_2[i]))
+}
+
+
+file_tp2 <- "data/oil_3w_Type_2.RData"
+save(oil_3w_Type_2, file=file_tp2, compress = "xz")
