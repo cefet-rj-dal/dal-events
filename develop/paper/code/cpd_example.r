@@ -37,5 +37,5 @@ detection <- detect(model, data$p_tpt)
 font <- theme(text = element_text(size=16))
 
 grf <- har_plot(model, data$p_tpt, detection,
-                data$event) + font
+                data$event, pointsize = 0.15) + font
 plot(grf)
