@@ -28,30 +28,15 @@ While the datasets can be accessed via raw files,
 it is recommended to use them through this R package, 
 following the usage guidelines provided in the next section.
 
-Full description available at: <https://github.com/cefet-rj-dal/united/wiki> 
+---
 
-## Installation
+## Dataset Description
 
-<!--
-The latest version of DAL Toolbox at CRAN is available at:
-<https://CRAN.R-project.org/package=united>
-
-You can install the stable version of DAL Toolbox from CRAN with:
-
-``` r
-install.packages("united")
-```
--->
+Full dataset description is available at: <https://github.com/cefet-rj-dal/united/wiki> 
 
 
-You can install the development version of DAL Toolbox from GitHub [https://github.com/cefet-rj-dal/united](https://github.com/cefet-rj-dal/united) with:
+---
 
-``` r
-timeout <- options()$timeout
-options(timeout=1200)
-devtools::install_github("cefet-rj-dal/united", upgrade="never")
-options(timeout=timeout)
-```
 ## Examples
 
 Usage: <https://github.com/cefet-rj-dal/united/tree/main/examples/>
@@ -62,6 +47,19 @@ The examples are organized according to available datasets.
 
 ```{r example}
 library(united)
+```
+
+---
+
+## Installation
+
+You can install the published version of UniTED package from GitHub [https://github.com/cefet-rj-dal/united](https://github.com/cefet-rj-dal/united) with:
+
+``` r
+timeout <- options()$timeout
+options(timeout=1200)
+devtools::install_github("cefet-rj-dal/united", upgrade="never")
+options(timeout=timeout)
 ```
 
 

@@ -16,29 +16,14 @@ across experiments. While the datasets can be accessed via raw files, it
 is recommended to use them through this R package, following the usage
 guidelines provided in the next section.
 
-Full description available at:
+------------------------------------------------------------------------
+
+## Dataset Description
+
+Full dataset description is available at:
 <https://github.com/cefet-rj-dal/united/wiki>
 
-## Installation
-
-<!--
-The latest version of DAL Toolbox at CRAN is available at:
-<https://CRAN.R-project.org/package=united>
-&#10;You can install the stable version of DAL Toolbox from CRAN with:
-&#10;``` r
-install.packages("united")
-```
--->
-
-You can install the development version of DAL Toolbox from GitHub
-<https://github.com/cefet-rj-dal/united> with:
-
-``` r
-timeout <- options()$timeout
-options(timeout=1200)
-devtools::install_github("cefet-rj-dal/united", upgrade="never")
-options(timeout=timeout)
-```
+------------------------------------------------------------------------
 
 ## Examples
 
@@ -55,6 +40,20 @@ library(united)
 #>   method  from 
 #>   head.ts stats
 #>   tail.ts stats
+```
+
+------------------------------------------------------------------------
+
+## Installation
+
+You can install the published version of UniTED package from GitHub
+<https://github.com/cefet-rj-dal/united> with:
+
+``` r
+timeout <- options()$timeout
+options(timeout=1200)
+devtools::install_github("cefet-rj-dal/united", upgrade="never")
+options(timeout=timeout)
 ```
 
 ## Bugs and new features request
